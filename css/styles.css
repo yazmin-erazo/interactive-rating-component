@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --light-gray:hsl(217, 12%, 63%);
+    --medium-gray:hsl(216, 12%, 54%);
+    --orange:hsl(25, 97%, 53%);
+    --white:hsl(0, 0%, 100%);
+    --black:hsl(215, 20%, 17%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    margin: 1.5rem;
+    min-height: 100vh;
+    width: 100%;
+}
+
+h2,
+h3{
+    color: var(--white);
+}
+
+.card-raiting, 
+.card-thanks{
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 2rem;
+    max-width: 412px;
+    min-width: 327px;
+    padding: 2.3rem;
+}
+
+.card-raiting img {
+
+    background-color: var(--dark-blue) ;
+    border-radius: 50% ;
+    padding: 1rem;
+}
+
+.card-raiting h2{
+    margin: 2rem 0 1rem;
+}
+
+p{
+    line-height:1.8 ;
+}
+
+.card-raiting p{
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+.card-raiting .score{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem ;
+}
+
+.card-raiting .score .btn-number{
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    height: 3rem;
+    padding-top: 0.2rem;
+    transition: 0.4s;
+    width: 3rem;
+}
+
+.card-raiting .score .btn-number:focus {
+    background-color: var(--light-gray);
+}
+
+.card-raiting .score .btn-number:hover {
+    background-color: var(--orange);
+}
+
+.btn-submit{
+    background-color: var(--orange);
+    border: none;
+    border-radius: 1.3rem;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.8rem 0 0.8rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+    width: 100%;
+}
+
+.btn-submit:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* ----------- CARD THANK YOU -----------*/
+
+.card-thanks{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-thanks img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.card-thanks p.rating{
+    background-color: var(--dark-blue) ;
+    border-radius: 22px;
+    color: var(--orange);
+    margin-bottom: 2rem;
+    padding: 0.2rem 1.2rem 0;
+}
+
+.card-thanks h3{
+    margin-bottom: 1rem;
+}
+
+.card-thanks p{
+    color: var(--light-gray);
+    margin-bottom:2rem ;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+button{
+    font-family: inherit;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
